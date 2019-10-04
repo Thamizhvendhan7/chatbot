@@ -151,7 +151,7 @@
                     $strongTxt = $crawler->filter('strong')->text();
                     $result['message'] = $strongTxt;
                     switch($strongTxt) {
-                        case '您的車票已訂到':
+                        case 'Your ticket has been booked':
                             $spanArr = $crawler->filter('span');
                             foreach($spanArr as $spanKey => $spanValue) {
                                 $crawler = new Crawler($spanValue);
